@@ -24,5 +24,13 @@
 
 <br>
 
-<%= javascript_pack_tag 'hello_vue' %>
+<div id="test">
+  <%- 5.times do |i| %>
+    <div>
+      <app/>
+    </div>
+  <%- end %>
+</div>
+
+<%= javascript_pack_tag 'issue' %>
 <%= link_to 'New Post', new_post_path %>
